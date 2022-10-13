@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .navbar-brand{
     font-family: 'Silkscreen', cursive;
+}
+
+.links{
+    font-family: 'Staatliches', cursive;
+    color: black;
+}
+
+.ctn{
+    background-color: black;
 }
