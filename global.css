@@ -13,3 +13,9 @@
 .ctn{
     background-color: black;
 }
+
+figcaption{
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+}
