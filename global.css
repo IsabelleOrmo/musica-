@@ -18,6 +18,14 @@
     font-size: 1.5em;
 }
 
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #337DBD;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
 tr,th,td{
     font-size: 1.1em;
     border: 1px solid #ddd;
