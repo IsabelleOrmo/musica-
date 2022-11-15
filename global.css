@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .navbar-brand{
     font-family: 'Silkscreen', cursive;
@@ -8,6 +10,27 @@
 .links{
     font-family: 'Staatliches', cursive;
     color: black;
+}
+
+.card-text-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: #137a7f;
+    font-size: 4.0em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+
+
+.myContainer{
+    margin-top: 3%;
 }
 
 .ctn{
