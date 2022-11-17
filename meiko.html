@@ -30,15 +30,27 @@
       object-fit: cover;
     }
 
+    .titulo:hover{
+      background: transparent;
+    }
 
-    #titulo {
+    img{
+      width: 70%;
+      border-radius: 5%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .titulo {
       font-family: 'Bebas Neue', cursive;
       color: #b11e1e;
       font-size: 4.0em;
       letter-spacing: 0.1em;
       text-align: center;
       margin-top: 3%;
-
+      background: transparent;
+      border: none;
     }
   </style>
 
@@ -84,7 +96,31 @@
     </nav>
   </header>
 
-  <div id="titulo" class="display-6">MEIKO</div>
+  <div class="tit">
+    <button class="btn btn-primary titulo" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">MEIKO</button>
+  </div>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sobre</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <figure>
+        <img src="./imgs/meiko.jpg" alt="">
+      </figure>
+      <table class="tbl" id="customers">
+        <tr>
+          <th>Voice Actor</th>
+          <td>
+            
+Meiko Haigō </td>
+        </tr>
+  
+      </table>
+    </div>
+  </div>
+    </div>
+  </div>
   <hr style="color: #ddd; width: 50%; margin-left: auto; margin-right: auto; margin-top: -1%;">
 
   <div class="container myContainer">
