@@ -32,6 +32,11 @@ h1 {
   text-align: center;
 }
 
+.tbl{
+  font-size: 1.0em;
+  display: flex;
+  justify-content: center;
+}
 
 footer{
   background-color: rgb(17, 16, 16);
@@ -40,7 +45,6 @@ footer{
 .icon{
   padding-left: 10px;
   padding-top: 10px;
-  transition: transform .2s;
 }
 
 .icon:hover{
