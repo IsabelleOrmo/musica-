@@ -25,8 +25,46 @@ h1 {
   text-align: center;
 }
 
-h6{
-  
+.footer-title{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+
+footer{
+  background-color: rgb(17, 16, 16);
+}
+
+.icon{
+  padding-left: 10px;
+  padding-top: 10px;
+  transition: transform .2s;
+}
+
+.icon:hover{
+  transform: scale(1.5);
+}
+
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+  width:100%;
+
+  position:absolute;
+
 }
 
 tr,
