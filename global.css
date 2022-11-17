@@ -1,51 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.navbar-brand{
-    font-family: 'Silkscreen', cursive;
+.navbar-brand {
+  font-family: "Silkscreen", cursive;
 }
 
-.links{
-    font-family: 'Staatliches', cursive;
-    color: black;
+.links {
+  font-family: "Staatliches", cursive;
+  color: black;
 }
 
-.card-text-subtitle{
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-size: 1.5em;
+.card-text-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
 }
 
-h1{
-    font-family: 'Bebas Neue', cursive;
-    color: #337DBD;
-    padding-top: 15px;
-    text-align: center;
+h1 {
+  font-family: "Bebas Neue", cursive;
+  color: #337dbd;
+  padding-top: 15px;
+  text-align: center;
 }
 
-
-tr,th,td{
-    font-size: 1.1em;
-    border: 1px solid #ddd;
-    padding: 4px;
+tr,
+th,
+td {
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  padding: 4px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-.myContainer{
-    margin-top: 3%;
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.ctn{
-    background-color: black;
+#customers tr:hover {
+  background-color: #ddd;
 }
 
-figcaption{
-    padding: 5px;
-    font-style: italic;
-    text-align: center;
+.myContainer {
+  margin-top: 3%;
+}
+
+.ctn {
+  background-color: black;
+}
+
+figcaption {
+  padding: 5px;
+  font-style: italic;
+  text-align: center;
 }

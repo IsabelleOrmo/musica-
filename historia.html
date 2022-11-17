@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="shortcut icon" href="./favicon/favicon-32x32.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Vocaloid - História</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="shortcut icon" href="./favicon/favicon-32x32.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <title>Vocaloid - História</title>
 
-    <style>
-       .ContainerMy{
-        display: inline-block;
-       }
+  <style>
+    .ContainerMy {
+      display: inline-block;
+    }
 
-    p{
+    p {
       color: rgb(0, 0, 0);
       font-size: 1.1em;
       text-indent: 1.3em;
       text-align: justify;
     }
-       
-    .songs{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 1.3em;
-    margin-top: 25%;
-    margin-left: 4%;
-    
-    }
 
-    .card-song{
-      transition: transform .2s;
+    .songs {
+      font-family: "Poppins", sans-serif;
+      color: white;
+      font-size: 1.3em;
+      margin-top: 25%;
       margin-left: 4%;
     }
 
-    .card-song:hover{
+    .card-song {
+      transition: transform 0.2s;
+      margin-left: 4%;
+    }
+
+    .card-song:hover {
       transform: scale(1.1);
       margin-left: 4%;
     }
 
-    .ContainerClass{
+    .ContainerClass {
       margin-left: 10%;
       margin-top: 5%;
       padding-left: 25px;
@@ -48,148 +49,203 @@
       width: 50rem;
     }
 
-    @media screen and (max-width: 780px){
-      .songs{
+    @media screen and (max-width: 780px) {
+      .songs {
         display: none;
       }
 
-      .ContainerClass{
-      margin-left: 3%;
-      margin-top: 3%;
-      padding-left: 3px;
-      padding-right: 3px;
-      width: 100%;
+      .ContainerClass {
+        margin-left: 3%;
+        margin-top: 3%;
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 100%;
       }
 
-      p{
+      p {
         font-size: 0.9em;
       }
 
-
-      img{
+      img {
         width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
     }
-    
+  </style>
+</head>
 
-    </style>
-
-  </head>
-
-
-<body style="background-color: black;">
-<header>
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Vocaloid</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">História</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./jogos.html">Jogos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Voicebanks e suas músicas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./musicas/miku.html">Hatsune Miku</a></li>
-            <li><a class="dropdown-item" href="./musicas/kaito.html">KAITO</a></li>
-            <li><a class="dropdown-item" href="./musicas/meiko.html">MEIKO</a></li>
-            <li><a class="dropdown-item" href="./musicas/v-flower.html">V-Flower</a></li>
-            <li><a class="dropdown-item" href="/musicas/luka.html">Megurine Luka</a></li>
+<body style="background-color: black">
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Vocaloid</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./jogos.html">Jogos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Voicebanks e suas músicas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./musicas/miku.html">Hatsune Miku</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./musicas/kaito.html">KAITO</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./musicas/meiko.html">MEIKO</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./musicas/v-flower.html">V-Flower</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/musicas/luka.html">Megurine Luka</a>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container ContainerMy">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="songs">
+          Músicas que talvez você goste <i>!</i>
+          <br />
+          <br />
+          <div class="card-song" style="width: 17rem">
+            <a href="./musicas/miku.html">
+              <img src="/imgs/futureEve.PNG" class="card-img-top" alt="Future Eve" />
+            </a>
+          </div>
+          <br />
+          <br />
+          <div class="card-song" style="width: 17rem">
+            <a href="./musicas/kaito.html">
+              <img src="/imgs/kaitosong.PNG" class="card-img-top" alt="Thousand Years Solo" />
+            </a>
+          </div>
+          <br />
+          <br />
+          <div class="card-song" style="width: 17rem">
+            <a href="/musicas/meiko.html">
+              <img src="/imgs/meikosong.PNG" class="card-img-top" alt="Future Eve" />
+            </a>
+          </div>
+          <br />
+          <br />
+          <div class="card-song" style="width: 18rem">
+            <a href="./musicas/v-flower.html">
+              <img src="/imgs/flowersong.PNG" class="card-img-top" alt="Future Eve" />
+            </a>
+          </div>
+          <br />
+          <br />
+          <div class="card-song" style="width: 18rem">
+            <a href="./musicas/luka.html">
+              <img src="/imgs/lukasong.PNG" class="card-img-top" alt="Future Eve" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-sm-12">
+        <div class="card ContainerClass">
+          <h1>VOCALOID: Surgimento e Popularização</h1>
+
+          <p>
+            Hatsune Miku. Se esse nome lhe soa familiar, saiba que ele bem que
+            deveria. No primeiro semestre de 2016, mais especificamente entre
+            abril e junho, a cantora fez um tour por dez cidades dos Estados
+            Unidos, o que atraiu alguma atenção da mídia. O site Houston Press
+            publicou um artigo de autoria de Cory Garcia sobre um dos
+            concertos, e mesmo aqui no Brasil o site Expresso fez um artigo
+            sobre a cantora, se aproveitando do - à época - iminente início do
+            tour. Mas claro, essa não é nem de longe a primeira vez que Miku
+            chama a atenção. Em 2011, ela foi garota propaganda de uma série
+            de comerciais da Toyota dos Estados Unidos, ao passo que no ano
+            seguinte, 2012, ela serviu para promover o navegador Google
+            Chrome, no Japão. Isso sem mencionar 2014, quando ela abriu alguns
+            dos shows da turnê da Lady Gaga, iniciados em maio daquele ano.
+            Ela inclusive já integrou um dos rankings da revista Time: o de
+            personagens fictícios mais influentes de 2014. Ela ficou em 8º
+            lugar, à propósito.
+          </p>
+          <br />
+          <p>
+            Hatsune Miku (初音ミク), cujo nome significa algo como “O Primeiro
+            Som do Futuro”, não é real. Ou, no mínimo, não é de carne e osso:
+            antes, trata-se de um programa, um software. Mais especificamente,
+            uma voz sintética, que qualquer um que compre o programa pode
+            usar, normalmente para criar musicas. E acreditem: pessoas
+            compram. Lançado em 31 de agosto de 2007, em apenas 12 dias Miku
+            já havia se tornado o software número 1 em vendas na Amazon
+            japonesa, e só em seu primeiro ano totalizaria mais de 40.000
+            cópias vendidas. De lá até aqui, a personagem certamente percorreu
+            um longo caminho, com sua popularidade aumentando cada vez mais.
+            Uma realidade que, inevitavelmente, nos faz perguntar: como,
+            exatamente, chegamos até aqui? E mais importante: como pôde uma
+            voz artificial despertar tamanho interesse nas pessoas? Bom, é
+            para abordar estas questões que decidi pela elaboração deste
+            artigo. Assim, vamos falar um pouco sobre um fenômeno que vem
+            impactando - em maior ou menor grau - ao mundo inteiro. Esta é a
+            história do projeto VOCALOID.
+          </p>
+
+          <figure>
+            <img src="./imgs/mikumiku.PNG" alt="Hatsune Miku em Project Diva (jogo)" />
+            <figcaption>Hatsune Miku</figcaption>
+          </figure>
+          <br />
+          <p>
+            E como exatamente as empresas usam dessa tecnologia? Honestamente,
+            é um processo bem mais complicado do que parece. Quem se
+            interessar por detalhes, eu recomendo lerem o artigo de 2007,
+            “VOCALOID - Commercial singing synthesizer based on sample
+            concatenation” [“VOCALOID - Sintetizador comecial de canto baseado
+            em concatenação de amostras”, em tradução livre], de Hideki
+            Kenmochi e Hayato Ohshita, do Center for Advanced Sound
+            Tecnologies [“Centro para Tecnologias de Som Avançadas”, também em
+            tradução livre], pertencente à própria Yamaha. Para este texto,
+            porém, será suficiente que o leitor saiba que a tecnologia
+            funciona obtendo uma amostra de voz humana, com a pessoa que
+            fornece a amostra sendo normalmente chamada de provedor, que é
+            então “quebrada” para formar os diversos fonemas (normalmente
+            sílabas) que irão compor o voicebank (literalmente, “banco de
+            voz”) do produto final: um vocaloid.
+          </p>
+          <figure>
+            <img src="./imgs/software.PNG" alt="" />
+            <figcaption>
+              Interface do software VOCALOID. Quando você compra um voicebank,
+              o software vem junto, já que é ele permite a manipulação das
+              vozes.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-</header>
 
-<div class="container ContainerMy">
-<div class="row">
-<div class="col-md-4 col-sm-12">
-  <div class="songs">
-    Músicas que talvez você goste <i>!</i>
-    <br>
-    <br>
-    <div class="card-song" style="width: 17rem;">
-      <a href="./musicas/miku.html">
-      <img src="/imgs/futureEve.PNG" class="card-img-top" alt="Future Eve">
-    </a>
-    </div>
-    <br>
-    <br>
-    <div class="card-song" style="width: 17rem;">
-      <a href="./musicas/kaito.html">
-      <img src="/imgs/kaitosong.PNG" class="card-img-top" alt="Thousand Years Solo">
-    </a>
-    </div>
-    <br>
-    <br>
-    <div class="card-song" style="width: 17rem;">
-      <a href="/musicas/meiko.html">
-      <img src="/imgs/meikosong.PNG" class="card-img-top" alt="Future Eve">
-    </a>
-    </div>
-    <br>
-    <br>
-    <div class="card-song" style="width: 18rem;">
-      <a href="./musicas/v-flower.html">
-      <img src="/imgs/flowersong.PNG" class="card-img-top" alt="Future Eve">
-    </a>
-    </div>
-    <br>
-    <br>
-    <div class="card-song" style="width: 18rem;">
-      <a href="./musicas/luka.html">
-      <img src="/imgs/lukasong.PNG" class="card-img-top" alt="Future Eve">
-    </a>
-    </div>
-</div>
-</div>
-
-<div class="col-md-7 col-sm-12">
-
-  
-  <div class="card ContainerClass">
-  <h1>VOCALOID: Surgimento e Popularização</h1>
- 
-  <p>Hatsune Miku. Se esse nome lhe soa familiar, saiba que ele bem que deveria. No primeiro semestre de 2016, mais especificamente entre abril e junho, a cantora fez um tour por dez cidades dos Estados Unidos, o que atraiu alguma atenção da mídia. O site Houston Press publicou um artigo de autoria de Cory Garcia sobre um dos concertos, e mesmo aqui no Brasil o site Expresso fez um artigo sobre a cantora, se aproveitando do – à época – iminente início do tour. Mas claro, essa não é nem de longe a primeira vez que Miku chama a atenção. Em 2011, ela foi garota propaganda de uma série de comerciais da Toyota dos Estados Unidos, ao passo que no ano seguinte, 2012, ela serviu para promover o navegador Google Chrome, no Japão. Isso sem mencionar 2014, quando ela abriu alguns dos shows da turnê da Lady Gaga, iniciados em maio daquele ano. Ela inclusive já integrou um dos rankings da revista Time: o de personagens fictícios mais influentes de 2014. Ela ficou em 8º lugar, à propósito.</p>
-  <br>
-  <p>
-    Hatsune Miku (初音ミク), cujo nome significa algo como “O Primeiro Som do Futuro”, não é real. Ou, no mínimo, não é de carne e osso: antes, trata-se de um programa, um software. Mais especificamente, uma voz sintética, que qualquer um que compre o programa pode usar, normalmente para criar musicas. E acreditem: pessoas compram. Lançado em 31 de agosto de 2007, em apenas 12 dias Miku já havia se tornado o software número 1 em vendas na Amazon japonesa, e só em seu primeiro ano totalizaria mais de 40.000 cópias vendidas. De lá até aqui, a personagem certamente percorreu um longo caminho, com sua popularidade aumentando cada vez mais. Uma realidade que, inevitavelmente, nos faz perguntar: como, exatamente, chegamos até aqui? E mais importante: como pôde uma voz artificial despertar tamanho interesse nas pessoas? Bom, é para abordar estas questões que decidi pela elaboração deste artigo. Assim, vamos falar um pouco sobre um fenômeno que vem impactando – em maior ou menor grau – ao mundo inteiro. Esta é a história do projeto VOCALOID.
-  </p>
-
-  <figure>
-  <img src="./imgs/mikumiku.PNG" alt="Hatsune Miku em Project Diva (jogo)">
-  <figcaption>Hatsune Miku</figcaption>
-  </figure> 
-  <br>
-  <p>
-    E como exatamente as empresas usam dessa tecnologia? Honestamente, é um processo bem mais complicado do que parece. Quem se interessar por detalhes, eu recomendo lerem o artigo de 2007, “VOCALOID – Commercial singing synthesizer based on sample concatenation” [“VOCALOID – Sintetizador comecial de canto baseado em concatenação de amostras”, em tradução livre], de Hideki Kenmochi e Hayato Ohshita, do Center for Advanced Sound Tecnologies [“Centro para Tecnologias de Som Avançadas”, também em tradução livre], pertencente à própria Yamaha. Para este texto, porém, será suficiente que o leitor saiba que a tecnologia funciona obtendo uma amostra de voz humana, com a pessoa que fornece a amostra sendo normalmente chamada de provedor, que é então “quebrada” para formar os diversos fonemas (normalmente sílabas) que irão compor o voicebank (literalmente, “banco de voz”) do produto final: um vocaloid.
-  </p>
-  <figure>
-    <img src="./imgs/software.PNG" alt="">
-    <figcaption>Interface do software VOCALOID. Quando você compra um voicebank, o software vem junto, já que é ele permite a manipulação das vozes.</figcaption>
-  </figure>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<script 
-
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
