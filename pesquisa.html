@@ -45,10 +45,29 @@
       margin-right: auto;
     }
 
+    .tittle{
+  font-family: "Poppins", sans-serif;
+  color: #337DBD;
+  font-size: 3.0em;
+  text-align: center;
+    }
+
     .miku-card-img {
       width: 100%;
       height: 50vw;
       object-fit: cover;
+    }
+
+    .pesquisa{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.2em;
     }
 
     @media screen and (max-width: 780px) {
@@ -83,8 +102,11 @@
               <a class="nav-link" href="./historia.html">História</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Jogos</a>
+              <a class="nav-link" aria-current="page" href="./jogos.html">Jogos</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pesquisa</a>
+              </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -104,118 +126,64 @@
     </nav>
   </header>
   <!--NavBar-->
+<br><br>
+  <div class="container pesquisa">
+ <div class="tittle">Pesquisa de interesse <i>!</i> </div>
 
-  <div class="container myContainer">
-    <!--primeira linha-->
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="card mb-3">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="./imgs/profectDiva.png" class="img-fluid rounded-start miku-card-img"
-                alt="Project Diva Future Tone">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">PROJECT DIVA </h5>
-                <p class="card-text">Hatsune Miku: Project DIVA é uma série de jogos eletrônicos musicais criado pela
-                  Sega e a Crypton Future Media. Os jogos, que começaram a ser publicados no PlayStation Portable,
-                  também receberam sequelas e novos títulos no PlayStation 3, Nintendo 3DS, PlayStation 4, Sega Arcade,
-                  PlayStation Vita e Nintendo Switch.</p>
-              </div>
-              <div id="pjDiva" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#pjDiva" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#pjDiva" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#pjDiva" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#pjDiva" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./imgs/pjDiva.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/pjDiva2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/pfDiva3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/pjDiva4.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#pjDiva" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#pjDiva" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
+    <p>
+        Caro usuário, temos interesse em saber quais as suas preferências para nossa próxima coleção! 
+    </p>
+    <form class="was-validated">
+        <div class="col-mb-3">
+            <label for="validationEmail" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="validationEmail" placeholder="nome@exemplo.com" required>
+          <div class="invalid-feedback">
+            Por favor insira um email válido.
           </div>
         </div>
-      </div>
-    </div>
+      <br>
+
+       
+          <div class="col-md-6">
+            
+            <label for="validationServer04" class="form-label">Selecione ao menos um personagem que você gostaria de ver novos produtos:</label>
+            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+              <option selected disabled value="">Escolha...</option>
+              <option>Hatsune Miku</option>
+              <option>KAITO</option>
+              <option>MEIKO</option>
+              <option>LUKA</option>
+              <option>Flower</option>
+            </select>
+            
+          </div>
+          <br>
+      
+          <div class="col-md-6">
+            Qual estilo você gostaria em novos produtos?
+            <label for="validationServer04" class="form-label"></label>
+            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+              <option selected disabled value="">Escolha...</option>
+              <option>Steampunk</option>
+              <option>Cyberpunk</option>
+              <option>Cottagecore</option>
+            </select>
+           
+          </div>
+       
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentários? Vamos adorar ler</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+      
+      
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <br><br><br>
+          </div>
+      </form>
   </div>
   <br>
-  <div class="container myContainer">
-    <!--primeira linha-->
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="card mb-3">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="./imgs/Sekai.PNG" class="img-fluid rounded-start miku-card-img" alt="Project Diva Future Tone">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">PROJECT SEKAI </h5>
-                <p class="card-text">Hatsune Miku: Colorful Stage!: conhecido na Ásia como Project Sekai: Colorful
-                  Stage! Parceria. Hatsune Miku, é um jogo de ritmo para celular japonês desenvolvido pela Colorful
-                  Palette, um estúdio da CyberAgent's Craft Egg, e publicado pela Sega Corporation. Além dos vocaloids
-                  presentes em Project Diva também existem 5 novos grupos músicais com suas próprias histórias!</p>
-              </div>
-              <div id="pjSekai" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#pjSekai" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#pjSekai" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#pjSekai" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#pjSekai" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./imgs/pjSekai.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/PjSekai2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/pjSekai3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imgs/pjSekai4.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#pjSekai" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#pjSekai" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <footer class="fluid-container p-4">
     <div class="row">
